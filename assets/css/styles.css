@@ -1,13 +1,24 @@
-p{
-    color: brown;
+body{
+    font-family: "Raleway", sans-serif;
+    background-color: #f1f1f1;
+}
+header{
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
 }
 
-.sub-head{
-    color: green;
-
+.sub-main-title{
+    font-size: 15px;
+    text-align: center;
 }
 
-#best-h2{
-    color: purple;
-
+.black-sub-title{
+    color: #f1f1f1;
+    background-color: black;
 }
