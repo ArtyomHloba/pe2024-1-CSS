@@ -1,7 +1,20 @@
+/*
+*{
+    padding: 0;
+    margin: 0;
+
+}
+*/
+
 body{
     font-family: "Raleway", sans-serif;
     background-color: #f1f1f1;
 }
+a{
+    text-decoration: none;
+    color: inherit; 
+}
+
 header{
     text-align: center;
 
@@ -30,6 +43,7 @@ h2{
 
 .nature-article{
     background-color: white;
+    padding: 15px;
     
 }
 
@@ -39,4 +53,15 @@ h2{
 
 .article-time{
     color: grey;
+}
+
+.article-main-info{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.read-more-link{
+   font-size: 15px;
+   border: 1px solid grey;
+   padding: 10px 20px;
 }
