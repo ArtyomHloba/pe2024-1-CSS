@@ -12,6 +12,11 @@ h1{
     font-size: 36px;
     font-weight: 600;
 }
+h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
 .sub-main-title{
     font-size: 15px;
@@ -21,4 +26,17 @@ h1{
 .black-sub-title{
     color: #f1f1f1;
     background-color: black;
+}
+
+.nature-article{
+    background-color: white;
+    
+}
+
+.article-title-desc{
+    font-size: 18px;
+}
+
+.article-time{
+    color: grey;
 }
