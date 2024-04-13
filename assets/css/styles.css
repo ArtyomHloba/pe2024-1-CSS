@@ -1,67 +1,28 @@
-/*
 *{
-    padding: 0;
     margin: 0;
-
-}
-*/
-
-body{
-    font-family: "Raleway", sans-serif;
-    background-color: #f1f1f1;
-}
-a{
-    text-decoration: none;
-    color: inherit; 
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-    text-align: center;
-
-}
-h1{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 36px;
-    font-weight: 600;
-}
-h2{
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 600;
+div{
+    border: 2px red solid;
+    padding: 5px    ;
+    margin: 1em;
+    width: 300px;
+    /*height: 100px;*/
 }
 
-.sub-main-title{
-    font-size: 15px;
+span{
+    display: block;
+}
+p{
+    display: inline;
+}
+ul{
     text-align: center;
 }
-
-.black-sub-title{
-    color: #f1f1f1;
-    background-color: black;
-}
-
-.nature-article{
-    background-color: white;
-    padding: 15px;
-    
-}
-
-.article-title-desc{
-    font-size: 18px;
-}
-
-.article-time{
-    color: grey;
-}
-
-.article-main-info{
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.read-more-link{
-   font-size: 15px;
-   border: 1px solid grey;
-   padding: 10px 20px;
+li{
+    display: inline-block;
+    border: 2px solid green;
+    padding: 2em;
 }
