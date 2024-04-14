@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    --main-blue-color: #4071f4 ;
+}
+
 body{
     font-family: sans-serif;
     background-color: antiquewhite;
@@ -19,9 +23,8 @@ body{
     overflow: hidden;
 }
 
-
 .blue-bg{
-    background-color: #4071f4;
+    background-color: var(--main-blue-color);
     height: 100px; 
 }
 
@@ -85,7 +88,7 @@ p,
 
 .subscribe-button,
 .message-button {
-  background-color: #3a73f9;
+  background-color: #4071f4;
   border: 0px;
   border-radius: 15px;
   padding: 10px 20px;
