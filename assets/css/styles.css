@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-section{
+/* section{
     border: 2px solid green;
     background-color: green;
     color: white;
@@ -16,14 +16,14 @@ section{
 div{
     border: 2px solid white;
     padding: 5px;
-}
+} */
 
 /* 
 div + div{
     margin-left: 10px;
 } */
 
-.logo{
+/* .logo{
     margin-right: auto ;
 }
 
@@ -35,4 +35,16 @@ nav{
 ul{
     display: flex;
     gap: 10px;
+} */
+
+
+footer{
+    display: flex;
+    
+}
+
+article{
+    border: 3px solid red;
+    width: 50%;
+    padding: 50px;
 }
