@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-header,
+/* header,
 aside,  
 main,
 footer{
@@ -34,4 +34,35 @@ main{
 
 footer{
     margin-top: auto;
-}
+} */
+
+
+.container {
+    border: 2px solid blue;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .child {
+    border: 2px solid green;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    max-width: 400px;
+    /* flex-grow: 0; Дозвіл збільшуваться */
+    /* flex-shrink: 0; Дозвіл зменьшуватися */ 
+    /* flex-basis: 300px; Перенос на новый рядок*/ 
+    flex: 1 1 300px;
+  }
+  /* 0 - НЕ можно
+  1- можно */
+
+  .child3{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+  }
+  
