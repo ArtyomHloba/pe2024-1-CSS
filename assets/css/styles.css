@@ -1,43 +1,76 @@
 *{
     box-sizing: border-box;
 }
-/* псевдоелементи */
+
+:root{
+  font-size: 20px;
+}
+
 body{
-  background-color: lightcoral;
+  padding: 20px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-p{
-  color: brown;
+article{
+  position: relative;
+  overflow: hidden;
+  min-width: 250px;
+  max-width: 350px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  color: aliceblue;
+  background-image: linear-gradient(to left, #ff6699 0%, #ffcc99 100%);
 }
 
-p::first-letter{
-  color: red;
-  font-size: 32px;
+.first-line{
+  display: flex;
+  justify-content: space-between;
 }
 
-p::first-line{
-  color: pink;
+.price{
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 15px 0 30px;
+}
+/* .circle{
+  position: absolute;
+  right: -30px;
+  bottom: -75px;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+} */
+
+/* .circle2{
+  position: absolute;
+  top: -10px;
+  right: -75px;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+} */
+
+article::before,
+article::after{
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-p::selection{
-  color: red;
+article::before{
+  right: -30px;
+  bottom: -75px;
 }
 
-li::marker{
-  color: gray;
-}
-
-p::before{
-  content: "START --";
-}
-
-p::after{
-  content: "END --";
-}
-
-span::before{
-  content: "<<";
-}
-span::after{
-  content: ">>";
+article::after{
+  top: -10px;
+  right: -75px;
 }
