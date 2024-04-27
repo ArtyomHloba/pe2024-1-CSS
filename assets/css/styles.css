@@ -1,74 +1,43 @@
 *{
     box-sizing: border-box;
 }
+/* псевдоелементи */
 body{
-    font-size: 1.5em;
+  background-color: lightcoral;
 }
 
-.container {
-    border: 5px solid green;
-  }
-  
-  .child {
-    border: 5px solid blue;
-    width: 150px;
-    height: 150px;
-    background-color: azure;
-  }
+p{
+  color: brown;
+}
 
-  .child:nth-child(1){
-    position: static;
-  }
+p::first-letter{
+  color: red;
+  font-size: 32px;
+}
 
-  .child:nth-child(2){
-    position: relative;
-    bottom: 50px;
-    left: 50px;
-    z-index: 1;
-  }
+p::first-line{
+  color: pink;
+}
 
-  .child:nth-child(3){
-    position: absolute;
-  }
+p::selection{
+  color: red;
+}
 
-.child:nth-child(4){
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-  } 
+li::marker{
+  color: gray;
+}
 
-  .child:nth-child(5){
-    position: sticky;
-  }
- 
-  section{
-    height: 500px;
-    border: 2px solid red;
-  }
+p::before{
+  content: "START --";
+}
 
-  h2{
-    position: sticky;
-    top: 0;
-  }
+p::after{
+  content: "END --";
+}
 
-    /* header {
-    height: 200px;
-    background-image: url("https://www.wfla.com/wp-content/uploads/sites/71/2023/05/GettyImages-1389862392.jpg?w=2560&h=1440&crop=1");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-  }
-
-  .bg {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(100, 100, 100, 0.5);
-  }  */
-
-
-
+span::before{
+  content: "<<";
+}
+span::after{
+  content: ">>";
+}
