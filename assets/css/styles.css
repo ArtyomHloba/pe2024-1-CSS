@@ -2,25 +2,58 @@
     box-sizing: border-box;
 }
 
-body{
-  padding: 10px;
-}
+header{
+  position: relative;
+  min-height: 100vh;
+  padding: 20px;
 
-button{
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   color: white;
-  background-color: blue;
-  padding: 1em 2em;
-  border: none;
-  border-radius: 10px;
-  transition: background-color 0.5s linear;
-  transition: box-shadow 0.5s;
-  transition: padding 0.5s;
+  font-family: sans-serif;
 }
 
-button:hover{
-  background-color: orange;
-  box-shadow: 0 0 10px orange;
-  padding: 1.5em 2.5em;
-  transform: scale(1.1);
+.bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-image: url(./../img/showcase.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  filter: blur(10px);
+  z-index: -1;
+
+}
+
+header:hover .bg{
+  filter: blur(0);
+  transition: filter 0.5s ease-in-out;
+}
+
+.header-cont{
+  filter: blur(0);
+}
+
+header:hover .header-cont{
+  filter: blur(2px);
+}
+
+img{
+  width: 140px;
+  height: 140px;
+}
+
+h1{
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.5em 0 1em;
 }
