@@ -2,60 +2,91 @@
     box-sizing: border-box;
 }
 
-/* section{
-  border: 3px solid orange;
-  padding: 15px;
+:root{
+  font-size: 16px;
+  --nav-height: 2rem;
 }
 
-article + article{
-  margin-top: 10px;
+body{
+  padding-top: var(--nav-height);
 }
 
-article{
-  border: 3px solid purple;
-  padding: 15px;
+nav{
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: black;
+  position: fixed;
+  top: 0  ;
+  left: 0;
+  right: 0;
 }
 
-@media screen and (min-width: 600px) {
-  section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
+nav a{
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
-  article{
-    max-width: 250px;
-  }
+nav > ul{
+  display: flex;
+}
 
-  article + article{
-    max-width: 250px;
-    margin: 0;
-  } 
-} */
+nav > div {
+  padding: 0.5rem;
+  margin-left: auto;
+  display: none;
+}
+
+header{
+  color: white;
+  position: relative;
+}
+
+header > img{
+  width: 100%;
+}
+
+header > div{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3rem;
+  text-align: center;
+}
 
 section{
-  border: 3px solid orange;
-  padding: 15px;
-  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+section > h2, section, h2+p{
+  text-align: center;
+}
+
+section > div{
   display: flex;
-  gap: 10px;
+  gap: 3em;
+  padding: 0 2em;
 }
 
-article{
-  border: 3px solid purple;
-  padding: 15px;
-  max-width: 250px;
+section img{
+  width: 100%;
 }
 
-@media screen and (max-width: 600px){
+figcaption{
+  text-align: center;
+}
 
-  section{
+@media screen and (max-width: 600px) {
+  section > div{
     flex-direction: column;
-    text-align: center;
-  }
-  article{
-    max-width: 100%;
+    gap: 1em;
+    padding: 0 3em;
   }
 }
